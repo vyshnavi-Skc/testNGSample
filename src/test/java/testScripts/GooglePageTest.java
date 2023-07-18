@@ -24,7 +24,7 @@ public class GooglePageTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 	
-	@Test
+	@Test(alwaysRun=true, dependsOnMethods="seleniumSearchTest")
 	public void javasearchTest() {
 		driver.get("https://www.google.com/");
 		WebElement schBox=driver.findElement(By.name("q"));
@@ -40,7 +40,17 @@ public class GooglePageTest {
 		WebElement schBox=driver.findElement(By.name("q"));
 		schBox.sendKeys("Selenium Tutorial");
 		schBox.submit();
-		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
+		Assert.assertEquals(driver.getTitle(), "Senium Tutorial - Google Search");
+	
+	}
+	@Test
+	public void appiumSearchTest() {
+		
+		driver.get("https://www.google.com/");
+		WebElement schBox=driver.findElement(By.name("q"));
+		schBox.sendKeys("Appium Tutorial");
+		schBox.submit();
+		Assert.assertEquals(driver.getTitle(), "Appium Tutorial - Google Search");
 	
 	}
 	//@AfterMethod
