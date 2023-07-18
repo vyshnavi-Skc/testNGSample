@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-18T07:33:53 GMT" name="SampleSuite" finished-at="2023-07-18T07:33:53 GMT" duration-ms="96">
+  <suite started-at="2023-07-18T07:55:47 GMT" name="Default suite" finished-at="2023-07-18T07:55:47 GMT" duration-ms="122">
     <groups>
     </groups>
-    <test started-at="2023-07-18T07:33:53 GMT" name="ModuleTest" finished-at="2023-07-18T07:33:53 GMT" duration-ms="96">
+    <test started-at="2023-07-18T07:55:47 GMT" name="Default test" finished-at="2023-07-18T07:55:47 GMT" duration-ms="122">
       <class name="parallelScripts.SampleOneTest">
-        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleOneTest@28f3b248]" started-at="2023-07-18T07:33:53 GMT" name="testFour" finished-at="2023-07-18T07:33:53 GMT" duration-ms="13" status="PASS">
+        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testFour" finished-at="2023-07-18T07:55:47 GMT" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFour -->
-        <test-method signature="testOne()[pri:0, instance:parallelScripts.SampleOneTest@28f3b248]" started-at="2023-07-18T07:33:53 GMT" name="testOne" finished-at="2023-07-18T07:33:53 GMT" duration-ms="13" status="PASS">
+        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testFour" finished-at="2023-07-18T07:55:47 GMT" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testFour" finished-at="2023-07-18T07:55:47 GMT" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testFour" finished-at="2023-07-18T07:55:47 GMT" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testFour" finished-at="2023-07-18T07:55:47 GMT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testFour" finished-at="2023-07-18T07:55:47 GMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method signature="testOne()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testOne" finished-at="2023-07-18T07:55:47 GMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOne -->
-        <test-method signature="testThree()[pri:0, instance:parallelScripts.SampleOneTest@28f3b248]" started-at="2023-07-18T07:33:53 GMT" name="testThree" finished-at="2023-07-18T07:33:53 GMT" duration-ms="3" status="PASS">
+        <test-method signature="testThree()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testThree" finished-at="2023-07-18T07:55:47 GMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testThree -->
-        <test-method signature="testTwo()[pri:0, instance:parallelScripts.SampleOneTest@28f3b248]" started-at="2023-07-18T07:33:53 GMT" name="testTwo" finished-at="2023-07-18T07:33:53 GMT" duration-ms="9" status="PASS">
+        <test-method signature="testTwo()[pri:0, instance:parallelScripts.SampleOneTest@483f6d77]" started-at="2023-07-18T07:55:47 GMT" name="testTwo" finished-at="2023-07-18T07:55:47 GMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTwo -->
       </class> <!-- parallelScripts.SampleOneTest -->
-      <class name="parallelScripts.SampleTwoTest">
-        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleTwoTest@3bf9ce3e]" started-at="2023-07-18T07:33:53 GMT" name="testFour" finished-at="2023-07-18T07:33:53 GMT" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFour -->
-        <test-method signature="testOne()[pri:0, instance:parallelScripts.SampleTwoTest@3bf9ce3e]" started-at="2023-07-18T07:33:53 GMT" name="testOne" finished-at="2023-07-18T07:33:53 GMT" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method signature="testThree()[pri:0, instance:parallelScripts.SampleTwoTest@3bf9ce3e]" started-at="2023-07-18T07:33:53 GMT" name="testThree" finished-at="2023-07-18T07:33:53 GMT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method signature="testTwo()[pri:0, instance:parallelScripts.SampleTwoTest@3bf9ce3e]" started-at="2023-07-18T07:33:53 GMT" name="testTwo" finished-at="2023-07-18T07:33:53 GMT" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTwo -->
-      </class> <!-- parallelScripts.SampleTwoTest -->
-    </test> <!-- ModuleTest -->
-  </suite> <!-- SampleSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

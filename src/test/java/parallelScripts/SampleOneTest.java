@@ -18,7 +18,8 @@ public class SampleOneTest {
 	  long id= Thread.currentThread().getId();
 	  System.out.println("TestThree in SampleOne...."+id);
   }
-  @Test
+  @Test(invocationCount=6,threadPoolSize=3,timeOut=2000)
+ // @Test
   public void testFour() {
 	  long id= Thread.currentThread().getId();
 	  System.out.println("TestFour in SampleOne...."+id);
