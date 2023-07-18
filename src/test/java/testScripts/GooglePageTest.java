@@ -40,7 +40,7 @@ public class GooglePageTest {
 		WebElement schBox=driver.findElement(By.name("q"));
 		schBox.sendKeys("Selenium Tutorial");
 		schBox.submit();
-		Assert.assertEquals(driver.getTitle(), "Senium Tutorial - Google Search");
+		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
 	
 	}
 	@Test
