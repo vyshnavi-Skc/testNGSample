@@ -5,9 +5,15 @@
   <test name="ModuleOneTest">
   
     <classes>
-    
-      <class name="testScripts.SampleTwoTest" />
+      <class name="parallelScripts.SampleOneTest" />
+       <class name="parallelScripts.SampleTwoTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="ModuleTwoTest">
+  
+    <classes>
       
+       <class name="parallelScripts.SampleThreeTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

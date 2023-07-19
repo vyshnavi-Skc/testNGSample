@@ -1,6 +1,11 @@
 package testScripts;
 
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,9 +21,18 @@ public class GooglePageTest {
 
 	
 	WebDriver driver;
+	ExtentReports extentReports;
+	ExtentSparkReporter spark;
+	ExtentTest extentTest;
 	
-//	@BeforeMethod
 	@BeforeTest
+	public void setupExtent() {
+		extentReports=new ExtentReports();
+		spark=new ExtentSparkReporter("test-output/SparkReport.html");
+		extentReports.attachReporter(spark);
+	}
+@BeforeMethod
+	//@BeforeTest
 	public void setup() {
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -26,6 +40,7 @@ public class GooglePageTest {
 	
 	@Test(alwaysRun=true, dependsOnMethods="seleniumSearchTest")
 	public void javasearchTest() {
+		extentTest = extentReports.createTest("Java Search Test");
 		driver.get("https://www.google.com/");
 		WebElement schBox=driver.findElement(By.name("q"));
 		schBox.sendKeys("Java Tutorial");
@@ -35,7 +50,7 @@ public class GooglePageTest {
 	}
 	@Test
 	public void seleniumSearchTest() {
-		
+		extentTest = extentReports.createTest("Selenium Search Test");
 		driver.get("https://www.google.com/");
 		WebElement schBox=driver.findElement(By.name("q"));
 		schBox.sendKeys("Selenium Tutorial");
@@ -45,7 +60,7 @@ public class GooglePageTest {
 	}
 	@Test
 	public void appiumSearchTest() {
-		
+		extentTest = extentReports.createTest("Appium Search Test");
 		driver.get("https://www.google.com/");
 		WebElement schBox=driver.findElement(By.name("q"));
 		schBox.sendKeys("Appium Tutorial");
@@ -53,8 +68,13 @@ public class GooglePageTest {
 		Assert.assertEquals(driver.getTitle(), "Appium Tutorial - Google Search");
 	
 	}
-	//@AfterMethod
+	
 	@AfterTest
+	public void finishExtent() {
+		extentReports.flush();
+	}
+	@AfterMethod
+	//@AfterTest
 	public void teardown() {
 		driver.close();
 	}
