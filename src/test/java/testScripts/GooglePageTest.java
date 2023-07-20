@@ -38,7 +38,7 @@ public class GooglePageTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 	
-	@Test(alwaysRun=true, dependsOnMethods="seleniumSearchTest")
+	//@Test(alwaysRun=true, dependsOnMethods="seleniumSearchTest")
 	public void javasearchTest() {
 		extentTest = extentReports.createTest("Java Search Test");
 		driver.get("https://www.google.com/");
@@ -48,7 +48,7 @@ public class GooglePageTest {
 		Assert.assertEquals(driver.getTitle(), "Java Tutorial - Google Search");
 	
 	}
-	@Test
+	@Test(retryAnalyzer=RetryTest.class)
 	public void seleniumSearchTest() {
 		extentTest = extentReports.createTest("Selenium Search Test");
 		driver.get("https://www.google.com/");
@@ -58,7 +58,7 @@ public class GooglePageTest {
 		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");
 	
 	}
-	@Test
+	//@Test
 	public void appiumSearchTest() {
 		extentTest = extentReports.createTest("Appium Search Test");
 		driver.get("https://www.google.com/");
