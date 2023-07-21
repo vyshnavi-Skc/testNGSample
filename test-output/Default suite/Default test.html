@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 20 05:28:23 GMT 2023</td>
+<td>Started on:</td><td>Fri Jul 21 07:57:09 GMT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42517 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9835 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,130 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testScripts.GooglePageTest.seleniumSearchTest()'><b>seleniumSearchTest</b><br>Test class: testScripts.GooglePageTest</td>
+<td title='testScripts.RemoteDriverTest.test()'><b>test</b><br>Test class: testScripts.RemoteDriverTest</td>
 <td></td>
-<td>13</td>
-<td>testScripts.GooglePageTest@4dbb42b7</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testScripts.GooglePageTest.seleniumSearchTest()'><b>seleniumSearchTest</b><br>Test class: testScripts.GooglePageTest</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ba18f108f4ff3530d754060b90ea1b6b, submitElement {id=75D052689C309EB103FC7BA6A838F3F8_element_2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:50357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50357/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ba18f108f4ff3530d754060b90ea1b6b)] -&gt; name: q]
-Session ID: ba18f108f4ff3530d754060b90ea1b6b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:83)
-	at testScripts.GooglePageTest.seleniumSearchTest(GooglePageTest.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace361712894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace361712894'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ba18f108f4ff3530d754060b90ea1b6b, submitElement {id=75D052689C309EB103FC7BA6A838F3F8_element_2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:50357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50357/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ba18f108f4ff3530d754060b90ea1b6b)] -&gt; name: q]
-Session ID: ba18f108f4ff3530d754060b90ea1b6b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:83)
-	at testScripts.GooglePageTest.seleniumSearchTest(GooglePageTest.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>23</td>
-<td>testScripts.GooglePageTest@4dbb42b7</td></tr>
+<td>7</td>
+<td>testScripts.RemoteDriverTest@6404f418</td></tr>
 </table><p>
 </body>
 </html>

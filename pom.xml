@@ -9,6 +9,19 @@
   <artifactId>selenium-java</artifactId>
   <version>4.10.0</version>
   </dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v102 -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-devtools-v102</artifactId>
+    <version>4.4.0</version>
+    <scope>test</scope>
+</dependency>
+  <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.13.0</version>
+</dependency>
   <dependency>
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
